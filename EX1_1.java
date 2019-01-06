@@ -7,9 +7,11 @@ public class EX1_1 {
 	Scanner userChoice = new Scanner(System.in);                        // userChoice will be my variable object that will hold the user's choice of a number between 10 & 100
 	System.out.println("Please pick a number between 10 and 100\n");    // Make the user choose a number between 10 & 100
 	int holder = userChoice.nextInt();                                  // Hold that choice in a variable
+	//PT -- make sure holder is in the 10-100 range -2
 	
 	for (int i = 0; i < holder; i++) {                                  // Now that we know the user's choice, let's start a for loop to output that many numbers to the screen
-    Random Rnumber = new Random();                                      // Rnumber will be my variable object for accessing the random number generation
+	//PT -- only do this one, not in the loop
+    Random Rnumber = new Random();                                       // Rnumber will be my variable object for accessing the random number generation
     int number = Rnumber.nextInt(1000) + 1;                             // Use Rnumber's member variables to randomly generate a number between 1 and 1000 and save it in the int variable number
 	if(number % 2 == 0) {                                               // If the number is even, tell the screen so
 	System.out.printf("%d is an even number\n", number);
