@@ -7,6 +7,8 @@ public class EX1_4 {
 	double weightHolder = input.nextDouble();                           // Hold it as a double variable
 	System.out.println("Okay, now give me your height in inches: ");    // Prompt user for their height
 	double heightHolder = input.nextDouble();                           // Hold it as a double variable
+	//PT -- name these numbers
+	//PT -- final double POUNDS_TO_KG = 0.455;
 	weightHolder *= .455;                                               // Convert the weight to kilograms
 	heightHolder *= .0254;                                              // Convert the height to meters
 	double BMI = weightHolder / (heightHolder * heightHolder);          // Use the BMI equation to calculate this person's Body-Mass Index
