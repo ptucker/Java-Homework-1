@@ -6,6 +6,11 @@ assertions, and does not accurately compute the amount of days between two Date 
 within the Compare function.  I'll just take this one on the cheek...
 */
 
+//PT -- yeah, there are a number of issues throughout. It starts with your constructor calling
+//     your other constructor, but then not checking its values. I think if you started over,
+//     and brought code over piece by piece, it'd be fine.
+// 8/15
+
 
 public class Date {
 
